@@ -1,0 +1,55 @@
+<meta charset="utf-8">
+
+<script >
+	function soma(valor1,valor2) {
+	  return numero(valor1) + numero(valor2);
+	}
+	function subtracao(valor1,valor2) {
+	  return numero(valor1) - numero(valor2);
+	}
+	function multiplicacao(valor1,valor2) {
+	  return numero(valor1) * numero(valor2);
+	}
+	function divisao(valor1,valor2) {
+	  return numero(valor1) / numero(valor2);
+	}
+
+	var valor1;
+	var valor2;
+	var operacao = "";
+
+	do {  //usando o 'do...while', já que a primeira vez sempre vamos entrar
+	
+    operacao = document.write("Qual operação você quer realizar? Responda 'soma', 'subtração', 'multiplicação', 'divisão' ou 'sair'.");	
+    while (operacao != "soma" && operacao != "subtração" && operacao != "multiplicação" && operacao != "divisão" && operacao != "sair") {  //enquanto o texto lido for diferente de "soma", "subtração", "multiplicação", "divisão" e "sair", exibir que não foi reconhecido e perguntar novamente
+	document.write("Operação não reconhecida!");
+	operacao = document.write("Qual operação você quer realizar? Responda 'soma', 'subtração', 'multiplicação', 'divisão' ou 'sair'.");
+    }
+
+	if (numero === sair){ //se o texto lido for "sair", sair do loop e da calculadora
+		break;
+	}
+
+	valor1 = document.write("insira o primeiro numero");
+	valor2 = document.write("insira o segundo numero");
+
+	 switch (operacao) {
+        case "soma":
+          document.write("O resultado da ${operacao} é ${soma(valor1, valor2)}");
+          break;
+        case "subtração":
+            document.write("O resultado da ${operacao} é ${subtracao(valor1, valor2)}");
+            break;
+        case "multiplicação":
+            document.write("O resultado da ${operacao} é ${multiplicacao(valor1, valor2)}");
+            break;
+        case "divisão":
+            document.write("O resultado da ${operacao} é ${divisao(valor1, valor2)}");
+            break;
+    }
+	} while(operacao === "soma" || operacao === "subtração" || operacao === "multiplicação" || operacao === "divisão")
+		document.write("Até a próxima!");
+
+	
+	
+</script>

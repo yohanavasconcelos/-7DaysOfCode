@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+
+<script>
+	let numeroUm = 1
+	let stringUm = '1'
+	let numeroTrinta = 30
+	let stringTrinta = '30'
+	let numeroDez = 10
+	let stringDez = '10'
+
+    function pulaLinha() {
+
+   	        document.write("<br>");
+   }
+
+   function mostraNaTela(frase){
+   	document.write(frase);
+    pulaLinha();
+
+   }
+    
+
+	if ( numeroUm === stringUm) {
+	  mostraNaTela('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')
+	} else {
+	  mostraNaTela('As variáveis numeroUm e stringUm não tem o mesmo valor')
+	}
+
+	if (numeroTrinta === stringTrinta) {
+	  mostraNaTela('As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo')
+	} else {
+	  mostraNaTela('As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo')
+	}
+
+	if (numeroDez === stringDez) {
+	  mostraNaTela('As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes')
+	} else {
+	  mostraNaTela('As variáveis numeroDez e stringDez não tem o mesmo valor')
+	}
+
+</script>
